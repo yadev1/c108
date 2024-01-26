@@ -16,9 +16,9 @@ recognition.onresult = function(event) {
 
     document.getElementById("textbox").innerHTML = Content;
     console.log(Content);
-      if (Content == "ola boa noite")
+      if (Content == "Olá Boa Noite")
       {
-        console.log("ola boa noite --- ")
+        console.log("Olá Boa Noite --- ")
         speak()
       }
 }
@@ -40,7 +40,7 @@ function speak(){
     }, 5000);
 }
 camera = document.getElementById("camera");
-webcam.set({
+Webcam.set({
     width:360,
     height:250,
     image_format : 'png',
