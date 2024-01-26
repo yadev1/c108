@@ -16,9 +16,9 @@ recognition.onresult = function(event) {
 
     document.getElementById("textbox").innerHTML = Content;
     console.log(Content);
-      if (Content == "Olá Boa Noite")
+      if (Content == "Olá boa noite")
       {
-        console.log("Olá Boa Noite --- ")
+        console.log("Olá boa noite --- ")
         speak()
       }
 }
@@ -54,7 +54,7 @@ function take_snapshot()
         document.getElementById("result").innerHTML = '<img id="selfie_image" src="'+data_uri+'"/>';
     })
 }
-function_save()
+function save()
 {
     link = document.getElementById("link");
     image = document.getElementById("selfie_image").src ;
